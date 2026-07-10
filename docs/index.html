@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Disease Classification</title>
+    <style>
+      :root {
+        --bg: #f4efe7;
+        --paper: #fffaf4;
+        --ink: #17231d;
+        --muted: #5f6d65;
+        --accent: #2c6e49;
+        --accent-2: #c2d3b5;
+        --line: #d8ddcf;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, #ffffff 0, transparent 32%),
+          linear-gradient(160deg, #ebe3d6 0%, var(--bg) 50%, #e6efe3 100%);
+      }
+
+      .wrap {
+        width: min(1080px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 40px 0 72px;
+      }
+
+      .hero,
+      .card {
+        background: color-mix(in srgb, var(--paper) 92%, white);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: 0 20px 60px rgba(23, 35, 29, 0.08);
+      }
+
+      .hero {
+        padding: 40px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--accent-2);
+        color: var(--ink);
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 16px;
+        font-weight: 700;
+        line-height: 1.05;
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 5vw, 4.5rem);
+        max-width: 11ch;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 18px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .button.primary {
+        background: var(--accent);
+        color: white;
+      }
+
+      .button.secondary {
+        border: 1px solid var(--line);
+        color: var(--ink);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      .card {
+        padding: 24px;
+      }
+
+      code {
+        background: #eef2ea;
+        border-radius: 8px;
+        padding: 2px 6px;
+        color: var(--ink);
+      }
+
+      ul {
+        padding-left: 18px;
+        margin: 0;
+      }
+
+      .footer {
+        margin-top: 22px;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <span class="eyebrow">Plant Pathology Demo</span>
+        <h1>Plant disease predictions from a hosted model.</h1>
+        <p>
+          The live inference app should be hosted on Hugging Face Spaces. This
+          page exists as the static documentation and launch point.
+        </p>
+        <div class="actions">
+          <a
+            class="button primary"
+            href="https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE_NAME"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open Hugging Face App
+          </a>
+          <a
+            class="button secondary"
+            href="https://github.com/YOUR_USERNAME/plant-disease-classification"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Source Repo
+          </a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>What runs where</h2>
+          <p>
+            Hugging Face Spaces runs the Python app and model inference.
+            GitHub Pages hosts only this static HTML documentation page.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Model details</h2>
+          <p>
+            Architecture: <code>EfficientNet-B0</code><br />
+            Outputs: 6 multi-label classes via <code>sigmoid</code>
+          </p>
+          <ul>
+            <li>complex</li>
+            <li>frog_eye_leaf_spot</li>
+            <li>healthy</li>
+            <li>powdery_mildew</li>
+            <li>rust</li>
+            <li>scab</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Files used for the Space</h2>
+          <ul>
+            <li><code>app.py</code></li>
+            <li><code>requirements.txt</code></li>
+            <li><code>plant_model_demo.pth</code></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Before publishing</h2>
+          <p>
+            Replace the placeholder Hugging Face and GitHub URLs in this file
+            with your real account and Space links.
+          </p>
+        </article>
+      </section>
+
+      <p class="footer">
+        Based on the current platform docs, Hugging Face Spaces is the correct
+        place for the live model demo, while GitHub Pages is appropriate for
+        documentation and outbound links.
+      </p>
+    </main>
+  </body>
+  </html>
