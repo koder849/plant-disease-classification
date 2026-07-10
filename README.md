@@ -27,11 +27,11 @@ Live app:
 
 ## Test Images
 
-Sample test images are included in [test-images](/Users/rav/Desktop/Komal/plant-disease-classification/test-images) so users can download them and try the app immediately.
+Sample test images are included in [test-images](./test-images) so users can download them and try the app immediately.
 
-- [complex_800cbf0ff87721f8.jpg](/Users/rav/Desktop/Komal/plant-disease-classification/test-images/complex_800cbf0ff87721f8.jpg)
-- [healthy_801d6dcd96e48ebc.jpg](/Users/rav/Desktop/Komal/plant-disease-classification/test-images/healthy_801d6dcd96e48ebc.jpg)
-- [rust_800f85dc5f407aef.jpg](/Users/rav/Desktop/Komal/plant-disease-classification/test-images/rust_800f85dc5f407aef.jpg)
+- [complex_800cbf0ff87721f8.jpg](./test-images/complex_800cbf0ff87721f8.jpg)
+- [healthy_801d6dcd96e48ebc.jpg](./test-images/healthy_801d6dcd96e48ebc.jpg)
+- [rust_800f85dc5f407aef.jpg](./test-images/rust_800f85dc5f407aef.jpg)
 
 To test the hosted app:
 
