@@ -6,6 +6,10 @@ Live app:
 
 - https://plant-disease-classification-ml.streamlit.app/
 
+Kaggle Jupyter Notebook with code and results:
+
+- https://www.kaggle.com/code/komalkaler/plant-pathology-ml
+
 ## Root files required for deployment
 
 - `app.py`

@@ -141,27 +141,34 @@
     <main class="wrap">
       <section class="hero">
         <span class="eyebrow">Plant Pathology Demo</span>
-        <h1>Plant disease predictions from a hosted model.</h1>
+        <h1>Plant disease predictions from a hosted Streamlit app.</h1>
         <p>
-          The live inference app should be hosted on Hugging Face Spaces. This
-          page exists as the static documentation and launch point.
+          The live inference app is hosted on Streamlit Community Cloud. This
+          page works as a simple launch page with model details, repository
+          links, and sample test images.
         </p>
         <div class="actions">
           <a
             class="button primary"
-            href="https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE_NAME"
+            href="https://plant-disease-classification-ml.streamlit.app/"
             target="_blank"
             rel="noreferrer"
           >
-            Open Hugging Face App
+            Open Streamlit App
           </a>
           <a
             class="button secondary"
-            href="https://github.com/YOUR_USERNAME/plant-disease-classification"
+            href="../README.md"
+          >
+            Read Documentation
+          </a>
+          <a
+            class="button secondary"
+            href="../"
             target="_blank"
             rel="noreferrer"
           >
-            View Source Repo
+            View Project Files
           </a>
         </div>
       </section>
@@ -170,8 +177,8 @@
         <article class="card">
           <h2>What runs where</h2>
           <p>
-            Hugging Face Spaces runs the Python app and model inference.
-            GitHub Pages hosts only this static HTML documentation page.
+            Streamlit Community Cloud runs the Python app and model inference.
+            This static page is only a companion entry point.
           </p>
         </article>
 
@@ -192,7 +199,7 @@
         </article>
 
         <article class="card">
-          <h2>Files used for the Space</h2>
+          <h2>Files used by the app</h2>
           <ul>
             <li><code>app.py</code></li>
             <li><code>requirements.txt</code></li>
@@ -201,19 +208,40 @@
         </article>
 
         <article class="card">
-          <h2>Before publishing</h2>
+          <h2>Sample test images</h2>
+          <ul>
+            <li>
+              <a href="../test-images/complex_800cbf0ff87721f8.jpg">
+                complex_800cbf0ff87721f8.jpg
+              </a>
+            </li>
+            <li>
+              <a href="../test-images/healthy_801d6dcd96e48ebc.jpg">
+                healthy_801d6dcd96e48ebc.jpg
+              </a>
+            </li>
+            <li>
+              <a href="../test-images/rust_800f85dc5f407aef.jpg">
+                rust_800f85dc5f407aef.jpg
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Prediction threshold</h2>
           <p>
-            Replace the placeholder Hugging Face and GitHub URLs in this file
-            with your real account and Space links.
+            The threshold is the minimum probability a class must reach before
+            it is shown as a predicted label. Lower values show more labels.
+            Higher values show fewer, stricter labels.
           </p>
         </article>
       </section>
 
       <p class="footer">
-        Based on the current platform docs, Hugging Face Spaces is the correct
-        place for the live model demo, while GitHub Pages is appropriate for
-        documentation and outbound links.
+        Launch the app, try one of the included test images, and adjust the
+        threshold to control how strict the displayed predictions are.
       </p>
     </main>
   </body>
-  </html>
+</html>
